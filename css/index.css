@@ -1,0 +1,15 @@
+body{
+  overflow: hidden;
+}
+.container{
+  background-color: #fff;
+}
+.header_box .header_image{
+  display: block;
+  width: 200px;
+  margin: 20px auto 0;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
