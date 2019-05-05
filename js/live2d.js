@@ -3515,7 +3515,6 @@
     o.prototype.changeModel = function (t, i) {
       if (this.reloadFlg) {
         this.reloadFlg = !1;
-        console.log(this.models[0]);
         this.releaseModel(0, t), this.createModel(), this.models[0].load(t, i)
       }
     },
@@ -3558,7 +3557,6 @@
       e.open('GET', t, !0), e.responseType = 'arraybuffer', e.onload = function () {
         switch (e.status) {
           case 200:
-            console.log('e.onload=====>>>>',t);
             i(e.response);
             break;
           default:
@@ -3586,7 +3584,6 @@
       }
     }, r.prototype.jsonParseFromBytes = function (t) {
       var i, e = new Uint8Array(t, 0, 3);
-      console.log('Uint8Array===>>>', e);
       return i = 239 == e[0] && 187 == e[1] && 191 == e[2] ? String.fromCharCode.apply(null, new Uint8Array(t, 3)) : String.fromCharCode.apply(null, new Uint8Array(t)), JSON.parse(i)
     }, r.prototype.log = function (t) {
     }
@@ -3605,7 +3602,6 @@
     Object.defineProperty(i, '__esModule', {value: !0}), i.default = o;
     var n = e(0), s = e(11), _ = r(s), a = e(1), h = r(a), l = e(3), $ = r(l);
     o.prototype = new n.L2DBaseModel, o.prototype.load = function (t, i, e) {
-      console.log(i);
       this.setUpdating(!0), this.setInitialized(!1), this.modelHomeDir = i.substring(0, i.lastIndexOf('/') + 1), this.modelSetting = new _.default;
       var r = this;
       this.modelSetting.loadModelSetting(i, function () {
@@ -3727,7 +3723,6 @@
       o.Live2DFramework.getPlatformManager().loadBytes(t, function (t) {
         var r = String.fromCharCode.apply(null, new Uint8Array(t));
         e.json = JSON.parse(r), i()
-        console.log(e.json);
       })
     }, r.prototype.getTextureFile = function (t) {
       return null == this.json[this.TEXTURES] || null == this.json[this.TEXTURES][t] ? null : this.json[this.TEXTURES][t]
