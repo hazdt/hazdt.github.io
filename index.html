@@ -1,64 +1,14 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
-  <meta name="format-detection" content="telephone=no"/>
-  <title>hazdt</title>
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/live2d.css">
-  <link rel="stylesheet" href="./css/index.css">
-  <style>
-    .message {
-      border-color: rgba(206, 0, 255, .4);
-      background-color: rgba(206, 0, 255, .2);
-      box-shadow: 0 3px 15px 2px rgba(206, 0, 255, .4);
-      color: rgba(206, 0, 255, .6);
-    }
-    .hide-button, .switch-button {
-      border-color: rgba(206, 0, 255, .4);
-      background: rgba(206, 0, 255, .2);
-      box-shadow: 0 3px 15px 2px rgba(206, 0, 255, .4);
-      color: rgba(206, 0, 255, .6);
-    }
-    .hide-button:hover, .switch-button:hover {
-      border-color: rgba(206, 0, 255, .6);
-      background: rgba(206, 0, 255, .4);
-      color: rgba(206, 0, 255, .8);
-    }
-  </style>
-</head>
-<body>
-<div id="landlord">
-  <div class="message" style="opacity:0"></div>
-  <canvas id="live2d" width="280" height="250" class="live2d" style="opacity:0;"></canvas>
-  <div class="hide-button">隐藏</div>
-  <div class="switch-button">变装</div>
-</div>
-</body>
+<html lang="">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+    <script type="module" crossorigin src="/assets/index-DeC3jK-w.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Dz00K_aO.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
 </html>
-<script>
-  var live2d_Path = '../static/';
-  var message_Path = '../static/';
-  var home_Path = 'https://www.wangmingchang.com/';
-  var nohitokoto = false;
-  var nospecialtip = false;
-</script>
-<script src="./js/jquery.js"></script>
-<script src="./js/live2d.js"></script>
-<script src="./js/message.js"></script>
-<script src="./js/run_local.js"></script>
-<script src="./js/canvasCodeRender.js"></script>
-<script type="text/javascript" color="0,0,0" opacity='0.7' zIndex="-2" count="200" src="js/zyy-nest.js"></script>
-<script>
-  eventsIntegration({
-    style:{
-      fontSize: 14,
-      width: '200px',
-      height:'200px'
-    },
-    text: '张延勇'
-  });
-</script>
